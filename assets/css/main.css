@@ -229,6 +229,37 @@ li {
     }
 }
 
+@media (hover: none) {
+    #dropdown-hover:focus #dropdown {
+        height: 225px;
+        max-height: 225px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .ddb {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 10;
+        display: none;
+    }
+
+    #dropdown-hover:focus .ddb {
+        display: inline-block;
+    }
+
+    .ddb:focus #dropdown {
+        height: 0px;
+        max-height: 0px;
+        opacity: 0;
+    }
+}
+
 /* PROJECT SECTION */
 
 .project-icon {
