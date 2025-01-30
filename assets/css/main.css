@@ -220,11 +220,13 @@ li {
     text-align: center;
 }
 
-#dropdown-hover:hover #dropdown {
-    height: 225px;
-    max-height: 225px;
-    opacity: 1;
-    transform: translateY(0);
+@media (hover: hover) {
+    #dropdown-hover:hover #dropdown {
+        height: 225px;
+        max-height: 225px;
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* PROJECT SECTION */
